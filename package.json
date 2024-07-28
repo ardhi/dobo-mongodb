@@ -1,0 +1,32 @@
+{
+  "name": "dobo-mongodb",
+  "version": "1.0.0",
+  "description": "MongoDB driver for Dobo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardhi/dobo-mongodb.git"
+  },
+  "keywords": [
+    "mongodb",
+    "dobo",
+    "db",
+    "driver",
+    "bajo",
+    "framework",
+    "modular"
+  ],
+  "author": "Ardhi Lukianto <ardhi@lukianto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardhi/dobo-mongodb/issues"
+  },
+  "homepage": "https://github.com/ardhi/dobo-mongodb#readme",
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
