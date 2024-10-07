@@ -1,4 +1,3 @@
 {
-  "alias": "dbmongo",
   "dependencies": ["dobo"]
 }
