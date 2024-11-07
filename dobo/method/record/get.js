@@ -3,7 +3,7 @@ async function recordGet ({ schema, id, options = {} } = {}) {
   const { instance } = getInfo(schema)
   const { thrownNotFound = true } = options
 
-  const model = instance.db.collection(schema.modelName)
+  const model = instance.db.collection(schema.name)
   const result = await model.findOne({ _id: id })
   if (!result && thrownNotFound) throw this.error('Record \'%s@%s\' not found!', id, schema.name, { statusCode: 404 })
   return { data: result }

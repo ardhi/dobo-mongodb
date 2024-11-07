@@ -6,7 +6,7 @@ async function recordRemove ({ schema, id, options = {} } = {}) {
   const { instance } = getInfo(schema)
 
   const rec = noResult ? undefined : await getRecord.call(this, { schema, id })
-  const model = instance.db.collection(schema.modelName)
+  const model = instance.db.collection(schema.name)
   await model.deleteOne({ _id: id })
   if (noResult) return
   return { oldData: rec.data }

@@ -6,7 +6,7 @@ async function recordFind ({ schema, filter = {}, options = {} } = {}) {
   const { limit, skip, sort, page } = await prepPagination(filter, schema)
 
   const criteria = filter.query ?? {}
-  const model = instance.db.collection(schema.modelName)
+  const model = instance.db.collection(schema.name)
   let count = 0
   if (options.count && !options.dataOnly) count = await model.countDocuments(criteria)
   const cursor = model.find(criteria).limit(limit).skip(skip)

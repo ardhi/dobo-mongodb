@@ -6,7 +6,7 @@ async function recordUpdate ({ schema, id, body, options } = {}) {
   const { instance } = getInfo(schema)
 
   const old = noResult ? undefined : await getRecord.call(this, { schema, id })
-  const model = instance.db.collection(schema.modelName)
+  const model = instance.db.collection(schema.name)
   await model.updateOne({ _id: id }, { $set: body })
   if (noResult) return
   const result = await getRecord.call(this, { schema, id })

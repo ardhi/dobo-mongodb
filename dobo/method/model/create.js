@@ -3,8 +3,8 @@ async function modelCreate ({ schema, options = {} }) {
   const { instance } = getInfo(schema)
   const { reduce } = this.app.bajo
 
-  await instance.db.createCollection(schema.modelName)
-  const model = instance.db.collection(schema.modelName)
+  await instance.db.createCollection(schema.name)
+  const model = instance.db.collection(schema.name)
   for (const p of schema.properties) {
     if (p.index || p.unique) await model.createIndex(p.name, p.unique ? { unique: true } : undefined)
   }
