@@ -5,7 +5,7 @@ async function recordGet ({ schema, id, options = {} } = {}) {
 
   const model = instance.db.collection(schema.name)
   const result = await model.findOne({ _id: id })
-  if (!result && thrownNotFound) throw this.error('Record \'%s@%s\' not found!', id, schema.name, { statusCode: 404 })
+  if (!result && thrownNotFound) throw this.error('recordNotFound%s%s', id, schema.name, { statusCode: 404 })
   return { data: result }
 }
 

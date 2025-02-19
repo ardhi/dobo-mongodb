@@ -4,7 +4,7 @@ async function connSanitizer (conn) {
     conn.host = conn.host ?? 'localhost'
     conn.port = conn.port ?? 27017
   }
-  if (!conn.database) this.fatal('\'%s@%s\' key is required', 'database', conn.name, { payload: conn })
+  if (!conn.database) this.fatal('keyIsRequired%s%s', 'database', conn.name, { payload: conn })
   const result = pick(conn, ['type', 'name', 'driver', 'host', 'port', 'user', 'password', 'database'])
   return result
 }
