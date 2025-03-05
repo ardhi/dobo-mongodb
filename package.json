@@ -1,6 +1,6 @@
 {
   "name": "dobo-mongodb",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "MongoDB driver for Dobo",
   "main": "index.js",
   "scripts": {
