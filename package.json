@@ -1,12 +1,15 @@
 {
   "name": "dobo-mongodb",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "MongoDB driver for Dobo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
+  "bajo": {
+    "type": "plugin"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ardhi/dobo-mongodb.git"
