@@ -1,22 +1,25 @@
 # dobo-mongodb
 
-Plugin name: **doboMangodb**, alias: **dbmongo**
-
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ardhi/dobo-mongodb) ![NPM Version](https://img.shields.io/npm/v/dobo-mongodb)
 
-> <br />**Attention**: I do NOT accept any pull request at the moment, thanks!<br /><br />
+> <br />**Attention**: I do NOT accept any pull requests at the moment, thanks! ([Why?](https://github.com/ardhi/bajo/blob/main/tutorial/00-welcome.md#contribution))<br /><br />
 
 MongoDB driver for [Dobo](https://github.com/ardhi/dobo)
 
 ## Installation
 
-Goto your ```<bajo-base-dir>``` and type:
+First, go to your ```{app-dir}``` and run the following command in your terminal:
 
 ```bash
-$ npm install dobo-mongodb
+$ npm install dobo dobo-mongodb
 ```
 
-Now open your ```<bajo-data-dir>/config/.plugins``` and put ```dobo-mongodb``` in it
+Next, open the file located at ```{data-dir}/config/.plugins``` and add ```dobo``` and ```dobo-mongodb```
+
+## Documentations
+
+- [Config Object](tutorial/00-config.md)
+- [API](https://ardhi.github.io/dobo-mongodb)
 
 ## License
 
