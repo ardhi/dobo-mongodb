@@ -1,6 +1,6 @@
 {
   "name": "dobo-mongodb",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "MongoDB driver for Dobo",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
   },
   "type": "module",
   "bajo": {
-    "type": "plugin"
+    "type": "plugin",
+    "alias": "dbmongo",
+    "dependencies": ["dobo"]
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,7 @@
   },
   "homepage": "https://github.com/ardhi/dobo-mongodb#readme",
   "dependencies": {
-    "mongodb": "^6.8.0"
+    "mongodb": "^7.0.0"
   },
   "devDependencies": {
     "clean-jsdoc-theme": "^4.3.0",

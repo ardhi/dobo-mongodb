@@ -12,10 +12,7 @@ async function factory (pkgName) {
    *
    * @class
    */
-  class DoboMongodb extends this.app.pluginClass.base {
-    static alias = 'dbmongo'
-    static dependencies = ['dobo']
-
+  class DoboMongodb extends this.app.baseClass.Base {
     constructor () {
       super(pkgName, me.app)
       this.config = {}
